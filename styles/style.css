@@ -17,6 +17,8 @@ header{
   margin: 0px;
   border: 100px; 
   background-color: #48cae4;
+  align-items: center;
+  color: white;
 }
 
 #content{
@@ -31,6 +33,7 @@ footer{
     margin: 0px;
     border: 100px; 
     background-color: #48cae4;
+    color: white;
 }
 
 hr{
