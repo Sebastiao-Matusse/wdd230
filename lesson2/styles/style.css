@@ -1,0 +1,65 @@
+body {
+  background-color: lightcyan;
+  font-family: 'Merriweather', serif;
+  padding: 5px 25px;
+  font-size: 16px;
+  margin: 0;
+  align-items:center;
+  background-image: -moz-repeating-linear-gradient();
+
+}
+h1, h2, footer{
+  font-family: 'Roboto Slab', serif;
+}
+
+header{
+  padding: 7px;
+  margin: 0px;
+  border: 100px; 
+  background-color: #48cae4;
+  color: white;
+}
+
+#content{
+    max-width:960px;
+    margin:0 auto;
+    background-color: white;
+    padding: 15px;
+  
+  }
+
+#three-main-sections{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1px;
+  grid-gap: 7px;
+}
+
+#first-design-princple, #second-design-principle, #third-design-principle{
+  margin: 10px;
+  /* border: 1px;
+  border: solid;
+  border-color: white; */
+}
+
+.site-link, h1, h2, h3{
+  text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 7px;
+    margin: 0px;
+    border: 100px; 
+    background-color: #48cae4;
+    color: white;
+}
+
+/* .byupathway-image, .pixlr-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
+p{
+    text-align: justify;
+}
