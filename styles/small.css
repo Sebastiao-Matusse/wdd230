@@ -16,7 +16,7 @@ h1, h2, footer{
 
 header{
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 1fr 3fr;
   padding: 7px;
   margin: 0px;
   border: 100px; 
