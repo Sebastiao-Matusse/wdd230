@@ -1,59 +1,62 @@
 body {
   background-color: black;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   padding: 5px 25px;
   font-size: 16px;
   margin: 0;
-  align-items:center;
-
-
+  align-items: center;
 }
-h1, h2, footer{
-  font-family: 'Roboto Slab', serif;
+h1,
+h2,
+footer {
+  font-family: "Roboto Slab", serif;
 }
 
-header{
+header {
   padding: 7px;
   margin: 0px;
-  border: 100px; 
+  border: 100px;
   background-color: #48cae4;
   color: white;
 }
 
-#content{
-    max-width:960px;
-    margin:0 auto;
-    background-color: white;
-    padding: 5px;
-  
-  }
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px;
+}
 
-#three-main-sections{
+#three-main-sections {
   display: grid;
   grid-template-columns: 1fr;
   margin: 1px;
   grid-gap: 7px;
 }
 
-#first-section, #second-section, #third-section{
+#first-section,
+#second-section,
+#third-section {
   padding: 7px;
   background-color: cadetblue;
-
 }
 
-.site-link, h1, h2, h3{
+.site-link,
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
-footer{
-    text-align: center;
-    padding: 7px;
-    margin: 0px;
-    border: 100px; 
-    background-color: #48cae4;
-    color: white;
+footer {
+  text-align: center;
+  padding: 7px;
+  margin: 0px;
+  border: 100px;
+  background-color: #48cae4;
+  color: white;
 }
-.logo-box img{
+.logo-box img {
   justify-content: center;
   box-sizing: border-box;
   display: block;
@@ -63,8 +66,8 @@ footer{
   padding: 3px;
 }
 
-.author-name{
-  font-size: 3rem;
+.author-name {
+  font-size: 1.5rem;
 }
 
 main img {
@@ -78,6 +81,6 @@ main img {
   padding: 3px;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
