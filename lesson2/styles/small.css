@@ -1,11 +1,11 @@
 body {
-  background-color: lightcyan;
+  background-color: black;
   font-family: 'Merriweather', serif;
   padding: 5px 25px;
   font-size: 16px;
   margin: 0;
   align-items:center;
-  background-image: -moz-repeating-linear-gradient();
+
 
 }
 h1, h2, footer{
@@ -24,22 +24,21 @@ header{
     max-width:960px;
     margin:0 auto;
     background-color: white;
-    padding: 15px;
+    padding: 5px;
   
   }
 
 #three-main-sections{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin: 1px;
   grid-gap: 7px;
 }
 
-#first-design-princple, #second-design-principle, #third-design-principle{
-  margin: 10px;
-  /* border: 1px;
-  border: solid;
-  border-color: white; */
+#first-section, #second-section, #third-section{
+  padding: 7px;
+  background-color: cadetblue;
+
 }
 
 .site-link, h1, h2, h3{
@@ -54,12 +53,31 @@ footer{
     background-color: #48cae4;
     color: white;
 }
+.logo-box img{
+  justify-content: center;
+  box-sizing: border-box;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  border: 0;
+  padding: 3px;
+}
 
-/* .byupathway-image, .pixlr-image {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
+.author-name{
+  font-size: 3rem;
+}
+
+main img {
+  box-sizing: border-box;
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 3px;
+}
+
 p{
     text-align: justify;
 }
