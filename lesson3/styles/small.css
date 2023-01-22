@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  justify-content: space-between;
+  display: flex;
+  padding: 5px;
+  /* background-color: lightcyan; */
+  margin: 25px;
 }
 
 #content {
@@ -7,15 +19,92 @@ body {
   max-width: 960px;
   margin: 0 auto;
   border: 10px;
-  border-color: gray;
 }
 
-nav {
-  margin: 0 auto;
-  max-width: 780px;
+nav ul li a {
+  justify-content: space-between;
+  display: block;
+  text-align: justify;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.75rem;
 }
-
+.logo-img {
+  background-color: rgb(255, 255, 13);
+}
 nav ul {
+  display: flex;
   list-style-type: none;
   overflow: hidden;
+}
+
+main {
+  display: flex;
+  text-align: justify;
+}
+
+section {
+  margin: 10px;
+}
+
+#purpose {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* DESIGN WEBPAGE */
+:root {
+  --primary-color: #ffe8d6;
+  --secondary-color: #48cae4;
+  --accent1-color: #e9c46a;
+  --accent2-color: #ca6702;
+
+  --heading-font: "Times New Roman";
+  --paragraph-font: "Zen Antique", serif;
+
+  --headline-color-on-white: black; /* headlines on a white background */
+  --headline-color-on-color: #48cae4; /* headlines on a colored background */
+  --paragraph-color-on-white: black; /* paragraph text on a white background */
+  --paragraph-color-on-color: #48cae4; /* paragraph text on a colored background */
+  --paragraph-background-color: black;
+  --nav-link-color: white;
+  --nav-background-color: #48cae4;
+  --nav-hover-link-color: #48cae4;
+  --nav-hover-background-color: #ca6702;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
 }
