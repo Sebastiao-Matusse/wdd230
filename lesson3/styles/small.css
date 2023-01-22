@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+#content {
+  background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 10px;
+  border-color: gray;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
