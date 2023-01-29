@@ -4,21 +4,22 @@
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header {
   justify-content: space-between;
   display: flex;
   padding: 5px;
-  /* background-color: lightcyan; */
-  margin: 25px;
-}
-
-#content {
-  background-color: white;
-  max-width: 960px;
-  margin: 0 auto;
-  border: 10px;
+  /* background-color: #e0ffff; */
+  margin-bottom: 25px;
+  align-items: center;
 }
 
 nav ul li a {
@@ -29,18 +30,18 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.75rem;
 }
-.logo-img {
-  background-color: rgb(255, 255, 13);
-}
+
 nav ul {
   display: flex;
   list-style-type: none;
   overflow: hidden;
+  background-color: #ffc328;
 }
 
 main {
   display: flex;
   text-align: justify;
+  background-color: aliceblue;
 }
 
 section {
@@ -58,9 +59,9 @@ h2 {
 
 /* DESIGN WEBPAGE */
 :root {
-  --primary-color: #ffe8d6;
-  --secondary-color: #48cae4;
-  --accent1-color: #e9c46a;
+  --primary-color: #ffc328;
+  --secondary-color: #754c00;
+  --accent1-color: #1fff01;
   --accent2-color: #ca6702;
 
   --heading-font: "Times New Roman";
