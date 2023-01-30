@@ -20,8 +20,7 @@ body {
   background-color: white;
 }
 
-#content,
-footer {
+#content {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -146,6 +145,11 @@ footer {
   margin: 0px;
   border: 100px;
   background-color: #e0ffff;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: center;
 }
 
 .copyright {
