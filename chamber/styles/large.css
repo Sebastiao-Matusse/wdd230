@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64rem) {
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #socials {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
