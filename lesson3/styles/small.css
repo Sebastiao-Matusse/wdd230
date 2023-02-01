@@ -9,9 +9,9 @@
   --paragraph-font: "Zen Antique", serif;
 
   --headline-color-on-white: black; /* headlines on a white background */
-  --headline-color-on-color: #48cae4; /* headlines on a colored background */
+  --headline-color-on-color: white; /* headlines on a colored background */
   --paragraph-color-on-white: black; /* paragraph text on a white background */
-  --paragraph-color-on-color: #1fff01; /* paragraph text on a colored background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: #754c00;
   --nav-link-color: white;
   --nav-background-color: #48cae4;
@@ -55,43 +55,32 @@ p.colored {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-
 #content {
   max-width: 960px;
   margin: 0 auto;
 }
 
-header {
-  justify-content: space-between;
-  display: flex;
-  padding: 5px;
-  margin-bottom: 25px;
-  align-items: center;
-}
-
 nav ul li a {
   justify-content: space-between;
   display: block;
-  text-align: justify;
+  text-align: center;
   padding: 0.75rem;
   text-decoration: none;
   font-size: 1.75rem;
 }
-
+nav {
+  width: 100%;
+}
 nav ul {
-  display: flex;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
   list-style-type: none;
-  overflow: hidden;
   background-color: #ffc328;
+  padding: 0;
 }
 
 main {
-  display: flex;
   text-align: justify;
   background-color: aliceblue;
 }
@@ -105,15 +94,26 @@ section {
   padding-left: 10px;
 }
 
-h2 {
+h1 {
+  background-color: #ffc328;
   text-align: center;
 }
-
-footer {
-  display: flex;
-  justify-content: center;
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
 }
 
 p {
-  font-family: Zen-Antique, Geneva, Tahoma, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  text-align: center;
+  margin: 10px;
+  background-color: #ffc328;
+}
+
+.logo-img {
+  text-align: center;
 }
