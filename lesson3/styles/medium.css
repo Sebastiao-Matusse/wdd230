@@ -1,0 +1,20 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    width: 50%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  #target-audience {
+    display: flex;
+  }
+}
