@@ -49,6 +49,7 @@ header div {
 header nav {
   grid-column-start: 3;
   grid-column-end: 4;
+  width: 100%;
 }
 
 #socials {
@@ -62,6 +63,7 @@ div ul {
   list-style-type: none;
   width: 100%;
   justify-content: start;
+  align-items: center;
 }
 
 #date {
@@ -143,6 +145,10 @@ nav ul.open {
   display: inline;
 }
 
+.page-body div:nth-child(6) {
+  display: none;
+}
+
 footer {
   text-align: center;
   /* display: grid;
@@ -187,12 +193,16 @@ main div {
   height: 50%;
 }
 
-.spotlights div {
+.spotlights p {
+  height: 200px;
   border: 1px solid gray;
 }
 
+.spotlights p:nth-child(3) {
+  display: none;
+}
+
 main div:nth-child(5) {
-  border: 0.5px solid black;
   padding: 10px;
 }
 
