@@ -1,6 +1,19 @@
 @media only screen and (min-width: 64rem) {
+  header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  nav button {
+    display: none;
+  }
+
   nav ul li a {
     padding: 0.5rem 1rem;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
   }
 
   nav {
@@ -13,11 +26,11 @@
 
   header nav {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
   }
 
   #socials {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
 }
