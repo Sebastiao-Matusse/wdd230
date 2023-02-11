@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #content {
@@ -41,6 +42,10 @@ header {
   background-color: #e0ffff;
 }
 
+header div {
+  width: 100%;
+  text-align: center;
+}
 header nav {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -139,8 +144,9 @@ nav ul.open {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   align-items: center;
   padding: 7px;
   margin: 0px;
@@ -148,14 +154,15 @@ footer {
   background-color: #e0ffff;
 }
 
-footer .logo {
-  display: flex;
-  justify-content: center;
+footer div h3,
+.footer-logo :nth-child(2),
+.copyright p {
+  margin: 0.2rem;
 }
 
 .copyright {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  border-top: 1px solid gray;
+  padding-top: 10px;
 }
 
 .wrapper {
@@ -187,4 +194,10 @@ main div {
 main div:nth-child(5) {
   border: 0.5px solid black;
   padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "EB Garamond", serif;
 }
