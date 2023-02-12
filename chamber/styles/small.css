@@ -80,6 +80,13 @@ main {
   margin: 10px;
 }
 
+.banner {
+  background-color: #ffc328;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 nav {
   background-color: #e0ffff;
 }
