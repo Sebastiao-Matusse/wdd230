@@ -22,3 +22,20 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 const date = document.getElementsByClassName("currentDate");
 date[0].textContent = fulldateUK;
 date[1].textContent = new Date().toLocaleString("en-UK", firstOptions);
+
+let day = new Date().getDay();
+console.log(day);
+
+const heroImageDivTag = document.querySelector("#hero-image");
+const sectionContainer = document.createElement("section");
+const bannerElement = document.createElement("h2");
+sectionContainer.setAttribute("class", "banner");
+
+if (day === 1 || day === 2) {
+  heroImageDivTag.appendChild(sectionContainer);
+  bannerElement.textContent =
+    "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+  sectionContainer.appendChild(bannerElement);
+} else {
+  sectionContainer.remove();
+}
