@@ -24,7 +24,6 @@ date[0].textContent = fulldateUK;
 date[1].textContent = new Date().toLocaleString("en-UK", firstOptions);
 
 let day = new Date().getDay();
-console.log(day);
 
 const heroImageDivTag = document.querySelector("#hero-image");
 const sectionContainer = document.createElement("section");
