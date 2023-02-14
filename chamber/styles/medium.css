@@ -36,7 +36,7 @@
     height: 100%;
   }
 
-  .spotlights p:nth-child(3) {
+  .spotlights section:nth-child(3) {
     display: none;
   }
 
