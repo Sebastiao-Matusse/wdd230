@@ -77,7 +77,7 @@
     grid-row: 3/4;
   }
 
-  .spotlights p:nth-child(3) {
+  .spotlights section:nth-child(3) {
     display: block;
   }
 }
