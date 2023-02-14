@@ -22,7 +22,7 @@ body {
 }
 
 #content {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   width: 100%;
 }
@@ -78,6 +78,13 @@ div ul {
 
 main {
   margin: 10px;
+}
+
+#hero-image figure {
+  margin: 0;
+}
+#hero-image figure img {
+  width: 100%;
 }
 
 .banner {
@@ -191,7 +198,8 @@ footer div h3,
 
 main div {
   padding: 5px;
-  height: 200px;
+  min-height: 200px;
+  height: 100%;
   border: 2px solid white;
   background-color: #e0ffff;
 }
@@ -200,12 +208,12 @@ main div {
   height: 50%;
 }
 
-.spotlights p {
+.spotlights section {
   height: 200px;
   border: 1px solid gray;
 }
 
-.spotlights p:nth-child(3) {
+.spotlights section:nth-child(3) {
   display: none;
 }
 
