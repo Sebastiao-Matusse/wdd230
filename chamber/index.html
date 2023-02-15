@@ -20,8 +20,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="logo"> <a href="index.html"><img src="../lesson3/Images/logo.png" width="100"
-                        alt="logo-image"></a>
+            <div class="logo"> <a href="index.html"><img src="images/logo.webp" width="100" alt="logo-image"></a>
                 <h2>The Adventures Travelling Chamaber of Commerce</h2>
             </div>
             <nav>
@@ -48,15 +47,28 @@
         <div id="content">
             <main class="page-body">
                 <div id="hero-image">
+                    <picture>
+                        <figure>
+                            <img src="images/wdd230-org.jpg" alt="Hero image">
+                        </figure>
+                    </picture>
                     Hero with site name and call to action
                 </div>
                 <div>Event</div>
-                <div>Weather</div>
+                <div id="weather">
+                    <h3>Weather</h3>
+                    <img src="images/cloud_sun_sunny_weather_icon.svg" alt="sun and cloud image">
+                    <p><span id="temperature">25</span> F</p>
+                    <p>Partialy Cloudy</p>
+                    <hr>
+                    <p>Wind Speed: <span id="windSpeed">3</span> mp/h</p>
+                    <p>wind Chill: <span id="windChill">ssd</span></p>
+                </div>
                 <div>News Release</div>
                 <div class="spotlights">
-                    <p>Spotlight 1</p>
-                    <p>Spotlight 2</p>
-                    <p>Spotlight 3</p>
+                    <section>Spotlight 1</section>
+                    <section>Spotlight 2</section>
+                    <section>Spotlight 3</section>
                 </div>
                 <div>Join</div>
             </main>
@@ -65,7 +77,7 @@
 
     <footer>
         <div class="logo">
-            <div class="footer-logo"><img src="../lesson3/Images/logo.png" width="100" alt="logo-image">
+            <div class="footer-logo"><img src="images/logo.webp" width="100" alt="logo-image">
 
                 <p>The Adventures Travelling Chamber of Commerce <br> Rua General Vieira da Rocha - Munhava <br> Beira
                     <br>
@@ -88,7 +100,8 @@
             <p>Last Last Updated: <span class="currentDate"></span> </p>
         </div>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
