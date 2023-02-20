@@ -83,7 +83,7 @@ main {
 #hero-image figure {
   margin: 0;
 }
-#hero-image figure img {
+#hero-image picture img {
   width: 100%;
 }
 
@@ -92,6 +92,11 @@ main {
   border: 1px solid black;
   border-radius: 5px;
   padding: 2px;
+  margin-bottom: 5px;
+}
+
+.banner h2 {
+  text-align: center;
 }
 
 nav {
@@ -225,4 +230,11 @@ h1,
 h2,
 h3 {
   font-family: "EB Garamond", serif;
+}
+
+
+#lazy-load-img picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
