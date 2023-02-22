@@ -233,8 +233,24 @@ h3 {
 }
 
 
+/* Lazy-load page */
+
 #lazy-load-img picture{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* .placekitten img{
+  width: 300px;
+  height: 400px;
+} */
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
 }
