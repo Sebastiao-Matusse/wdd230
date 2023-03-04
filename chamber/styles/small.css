@@ -201,7 +201,7 @@ footer div h3,
   width: 80%;
 } */
 
-main div {
+.maindivs {
   padding: 5px;
   min-height: 200px;
   height: 100%;
@@ -253,4 +253,79 @@ picture img[data-src] {
 picture img {
   filter: blur(0em);
   transition: filter 0.5s;
+}
+
+/* --------- FORM ------------ */
+
+form fieldset{
+  margin: 2rem;
+  border: 1px solid #ffa500;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1) ;
+}
+
+form label.sbs, label textarea {
+  display: block;
+  padding: .75rem;
+  color: #555;
+}
+
+form label.sbs input{
+  margin: 0.2rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #ffa500;
+  color: white;
+  border-radius: 1rem;
+  padding: .75 rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  max-width: 20rem;
+}
+
+/* --------THANK YOU PAGE-------- */
+
+.mainthankyou {
+  display: grid;
+  justify-content: center;
+}
+
+.submitsuccessimg{
+  margin: 10px;
+}
+
+.mainthankyou, .thankyou {
+  text-align: center;
+  margin: 2px;
+}
+
+input:required:invalid {
+  border: 1px solid #ffa500;
+}
+
+input:required:valid{
+  border: 1px solid green;
 }
