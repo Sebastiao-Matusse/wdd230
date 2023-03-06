@@ -17,23 +17,15 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* background-color: white; */
   font-family: "Times New Roman", Times, serif;
 }
 
 #content {
-  /* max-width: 960px; */
   margin: 0 auto;
   width: 100%;
 }
 
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px;
-} */
-
+/* <-------STYLING THE HEADER------->*/
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -233,18 +225,13 @@ h3 {
 }
 
 
-/* Lazy-load page */
+/* Lazy-load image page */
 
 .lazy-load-img picture{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/* .placekitten img{
-  width: 300px;
-  height: 400px;
-} */
 
 picture img[data-src] {
   filter: blur(0.2em);
@@ -331,7 +318,7 @@ input:required:valid{
 }
 
 /* ------directory------ */
-body{
+.director-body{
   font-size: 1rem;
   background-color: grey;
 }
@@ -351,8 +338,6 @@ body{
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .cardhead h2, .cardhead p {
   margin: 10px;
