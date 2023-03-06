@@ -1,11 +1,11 @@
 body {
   background-color: black;
   font-family: "Merriweather", serif;
-  padding: 5px 25px;
+  padding: 2px ;
   font-size: 16px;
   margin: 0;
-  align-items: center;
 }
+
 h1,
 h2,
 footer {
@@ -16,12 +16,11 @@ header {
   padding: 7px;
   margin: 0px;
   border: 100px;
-  background-color: #48cae4;
+  background-color: black;
   color: white;
 }
 
 #content {
-  max-width: 960px;
   margin: 0 auto;
   background-color: white;
   padding: 5px;
