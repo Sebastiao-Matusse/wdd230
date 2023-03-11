@@ -77,7 +77,13 @@ if ("IntersectionObserver" in window) {
 
 // Local Storage
 // initialize display elements
-const displayDays = document.querySelector("#daysAfter");
+const header = document.querySelector("header");
+const divHeader = document.createElement("div");
+const daysAfter = document.createElement("span");
+divHeader.setAttribute("class", "date");
+daysAfter.setAttribute("id", "daysAfter");
+divHeader.appendChild(daysAfter);
+header.appendChild(divHeader);
 
 // get the stored value in localStorage
 let lastDayVisit = Number(window.localStorage.getItem("visits-ls"));
@@ -87,12 +93,61 @@ let lastDayVisit = Number(window.localStorage.getItem("visits-ls"));
 let today = Date.now();
 if (lastDayVisit !== 0) {
   const numDays = Math.round(today / 86400000 - lastDayVisit);
-  displayDays.textContent = numDays;
+  daysAfter.textContent = `${numDays} days after your last visit`;
 } else {
-  displayDays.textContent = "This is your first visit ";
+  daysAfter.textContent = "This is your first visit ";
 }
 
 // sets the day visiting the page as the last visiting day.
 lastDayVisit = today / 86400000;
 // store the new day of last visting the page
 localStorage.setItem("visits-ls", lastDayVisit);
+
+url =
+  "https://raw.githubusercontent.com/Sebastiao-Matusse/wdd230/main/directory/json/data.json";
+
+async function getCompanyData(url) {
+  const response = await fetch(url);
+
+  if (response.ok) {
+    const data = await response.json();
+    // console.log(data);
+    displayCompanies(data.companies);
+  }
+}
+
+getCompanyData(url);
+
+const displayCompanies = (companies) => {
+  const cards = document.querySelector("div.cards");
+  companies.forEach((company) => {
+    // Create elements to add to the div.cards element
+    let card = document.createElement("section");
+    let cardhead = document.createElement("div");
+    cardhead.setAttribute("class", "cardhead");
+    let h2 = document.createElement("h2");
+    let address = document.createElement("p");
+    let phones = document.createElement("p");
+    let website = document.createElement("a");
+    let portrait = document.createElement("img");
+
+    h2.textContent = `${company.fname} ${company.lNme}`;
+    address.textContent = `${company.address}`;
+    phones.textContent = `${company.phones}`;
+    website.setAttribute("href", company.Website);
+
+    portrait.setAttribute("src", company.img);
+    portrait.setAttribute("loading", "lazy");
+    portrait.setAttribute("width", "340");
+    portrait.setAttribute("height", "440");
+
+    cardhead.appendChild(h2);
+    cardhead.appendChild(address);
+    cardhead.appendChild(phones);
+    cardhead.appendChild(website);
+    card.appendChild(cardhead);
+    card.appendChild(portrait);
+    cards.appendChild(card);
+    // console.log(cards);
+  });
+};
