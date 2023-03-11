@@ -189,9 +189,9 @@ footer div h3,
   flex-direction: column;
 }
 
-/* #content {
-  width: 80%;
-} */
+#weather p{
+  text-align: center;
+}
 
 .maindivs {
   padding: 5px;
