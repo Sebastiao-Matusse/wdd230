@@ -141,6 +141,10 @@ const displayCompanies = (companies) => {
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute("width", "340");
     portrait.setAttribute("height", "440");
+    portrait.setAttribute(
+      "alt",
+      `portrait of ${company.fname} ${company.lNme}`
+    );
 
     cardhead.appendChild(h2);
     cardhead.appendChild(address);
