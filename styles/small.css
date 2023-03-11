@@ -1,18 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700'); */
 
 body {
   background-color: #093434;
-  font-family: "Times New Roman", serif;
   padding: 5px 25px;
   font-size: 1.25rem;
   margin: 0;
   color: #444;
-}
-h1,
-h2,
-footer {
-  font-family: "Roboto Slab", serif;
+  font-family: "lobster", "sans-serif";
 }
 
 #content {
@@ -24,10 +17,11 @@ footer {
 header,
 footer {
   color: white;
-  background-color: cyan;
+  background-color: #48cae4;
   border: 100px;
   margin: 0px;
   padding: 7px;
+  font-family: "Forum", "serif";
 }
 footer,
 p,
