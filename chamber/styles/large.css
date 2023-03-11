@@ -80,4 +80,21 @@
   .spotlights section:nth-child(3) {
     display: block;
   }
+
+  
+  table {
+    display: block;
+    position: absolute;
+    left: 65vw;
+    top: 840px;
+  }
+
+  thead{
+    font-size: .8rem;
+    color: #9c2c13;;
+  }
+  tbody tr td {
+    padding: .88rem;
+  }
+
 }
