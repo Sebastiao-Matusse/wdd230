@@ -114,22 +114,14 @@ nav button {
   padding: 0;
 }
 
-nav ul li a {
-  /* align-items: center; */
+nav ul li a{
   width: 100%;
-  /* height: 100%; */
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
   color: #333;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-
-/* nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
-} */
-
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -162,8 +154,6 @@ nav ul.open {
 
 footer {
   text-align: center;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
   align-items: center;
   padding: 7px;
   margin: 0px;
@@ -339,7 +329,41 @@ input:required:valid{
   align-items: center;
 }
 
-.cardhead h2, .cardhead p {
+.cardhead h2, .cardhead p, .cardhead a {
   margin: 10px;
   text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.cardhead a {
+  background-color: white;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section .cardhead {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
 }
