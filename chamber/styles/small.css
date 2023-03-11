@@ -348,6 +348,11 @@ input:required:valid{
 	text-align: center;
 }
 
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
 .list {
 	display: flex;
 	flex-direction: column;
