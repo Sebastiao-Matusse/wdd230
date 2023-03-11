@@ -54,7 +54,6 @@
             </li>
           </ul>
         </div>
-        <div class="date"><span class="currentDate"></span></div>
       </header>
 
         <main>
@@ -100,11 +99,48 @@
               <label class="sbs">
                 <input type="radio" name="membership" /> 4. Gold Membership
               </label>
-              <!-- <div class="membershipBenefits">
-                This memberships have increasing costs as well as increased
-                benefits per level like trainings, advertising (like on the home
-                page spotlights), event discounts, etc.
-              </div> -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Cost
+                    </th>
+                    <th>
+                      Advertising
+                    </th>
+                    <th>
+                      Discounts
+                    </th>
+                    <th>Trainings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>$25</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>$50</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>$75</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <t r>
+                    <td>$100</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </t>
+              </tbody>
+              </table>
             </fieldset>
 
             <fieldset>
@@ -117,6 +153,7 @@
             </fieldset>
 
             <label><input type="submit" name="submitBtn" class="submitBtn" value="Join The Chamber"></label>
+            <label><input type="hidden" name="currentDate" class="currentDate"></label>
           </form>
         </main>
     <footer>
@@ -131,7 +168,6 @@
             <br />
             Moçambique
           </p>
-          <!-- <p></p> -->
         </div>
       </div>
       <div class="footer-info">
