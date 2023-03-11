@@ -5,12 +5,4 @@
       grid-gap: 5px;
       align-items: center;
       }
-      
-      body{
-        font-family: 'Merriweather', serif;
-      }
-
-      header, footer{
-        background-color: #48cae4;
-      }
 }
