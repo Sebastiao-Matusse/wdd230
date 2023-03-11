@@ -104,7 +104,7 @@ lastDayVisit = today / 86400000;
 localStorage.setItem("visits-ls", lastDayVisit);
 
 url =
-  "https://raw.githubusercontent.com/Sebastiao-Matusse/wdd230/main/directory/json/data.json";
+  "https://raw.githubusercontent.com/Sebastiao-Matusse/wdd230/main/chamber/json/data.json";
 
 async function getCompanyData(url) {
   const response = await fetch(url);
