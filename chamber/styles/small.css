@@ -372,3 +372,7 @@ input:required:valid{
 .list section img {
 	display: none; /* smaller viewports only */
 }
+
+table{
+  display: none;
+}
