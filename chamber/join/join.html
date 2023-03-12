@@ -49,113 +49,122 @@
               /></a>
             </li>
             <li class="push">
-              <a href="https://www.linkedin.com/" target="_blank"> 
-                <img src="../images/in.png" alt="linkedin-icon"/> </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="../images/in.png" alt="linkedin-icon" />
+              </a>
             </li>
           </ul>
         </div>
       </header>
 
-        <main>
-          <form method="get" action="thankyou.html">
-            <fieldset>
-              <legend>Aplicant Information</legend>
-              <label class="top">
-                First Name* <input type="text" name="fname" required />
-              </label>
-              <label class="top">
-                Last Name* <input type="text" name="lname" required />
-              </label>
-              <label class="top">
-                Business Position Title
-                <input type="text" name="position" pattern="[A-Za-z -]{7,}" />
-              </label>
-              <label class="top">
-                Email*
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="example@gmail.com"
-                  required
-                />
-              </label class="top">
-              <label class="top"> Phone* <input type="tel" name="phone" required /> </label>
-              <label class="top"> Business Name* <input type="text" required /> </label>
-            </fieldset>
+      <main>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Aplicant Information</legend>
+            <label class="top">
+              First Name* <input type="text" name="fname" required />
+            </label>
+            <label class="top">
+              Last Name* <input type="text" name="lname" required />
+            </label>
+            <label class="top">
+              Business Position Title
+              <input type="text" name="position" pattern="[A-Za-z -]{7,}" />
+            </label>
+            <label class="top">
+              Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+            <label class="top">
+              Phone* <input type="tel" name="phone" required />
+            </label>
+            <label class="top">
+              Business Name* <input type="text" required />
+            </label>
+          </fieldset>
 
-            <fieldset>
-              <legend>Membership</legend>
-              <div>Select my Membership Level</div>
-              <label class="sbs">
-                <input type="radio" name="membership" />1. NP Membership is for
-                non profit organizations and there is no fee
-              </label>
-              <label class="sbs">
-                <input type="radio" name="membership" /> 2. Bronze Membership
-              </label>
-              <label class="sbs">
-                <input type="radio" name="membership" /> 3. Silver Membership
-              </label>
-              <label class="sbs">
-                <input type="radio" name="membership" /> 4. Gold Membership
-              </label>
-              <table>
-                <thead>
-                  <tr>
-                    <th>
-                      Cost
-                    </th>
-                    <th>
-                      Advertising
-                    </th>
-                    <th>
-                      Discounts
-                    </th>
-                    <th>Trainings</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>$25</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                  </tr>
-                  <tr>
-                    <td>$50</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                  </tr>
-                  <tr>
-                    <td>$75</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                  </tr>
-                  <t r>
-                    <td>$100</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                  </t>
+          <fieldset>
+            <legend>Membership</legend>
+            <div>Select my Membership Level</div>
+            <label class="sbs">
+              <input type="radio" name="membership" />1. NP Membership is for
+              non profit organizations and there is no fee
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 2. Bronze Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 3. Silver Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 4. Gold Membership
+            </label>
+            <table>
+              <thead>
+                <tr>
+                  <th>Cost</th>
+                  <th>Advertising</th>
+                  <th>Discounts</th>
+                  <th>Trainings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$25</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$50</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$75</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$100</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                </tr>
               </tbody>
-              </table>
-            </fieldset>
+            </table>
+          </fieldset>
 
-            <fieldset>
-              <legend>Business Description</legend>
-              <label>
-                Describe My Business
-                <textarea name="description" cols="50" rows="5"></textarea>
-              </label>
-              <input type="hidden" name="hiddenDate" value="Todays Date">
-            </fieldset>
+          <fieldset>
+            <legend>Business Description</legend>
+            <label>
+              Describe My Business
+              <textarea name="description" cols="50" rows="5"></textarea>
+            </label>
+            <input type="hidden" name="hiddenDate" value="Todays Date" />
+          </fieldset>
 
-            <label><input type="submit" name="submitBtn" class="submitBtn" value="Join The Chamber"></label>
-            <label><input type="hidden" name="currentDate" class="currentDate"></label>
-          </form>
-        </main>
+          <label
+            ><input
+              type="submit"
+              name="submitBtn"
+              class="submitBtn"
+              value="Join The Chamber"
+          /></label>
+          <label
+            ><input type="hidden" name="currentDate" class="currentDate"
+          /></label>
+        </form>
+      </main>
+    </div>
+
     <footer>
       <div class="logo">
         <div class="footer-logo">
