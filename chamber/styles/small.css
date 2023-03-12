@@ -156,8 +156,6 @@ footer {
   text-align: center;
   align-items: center;
   padding: 7px;
-  margin: 0px;
-  border: 100px;
   background-color: #e0ffff;
 }
 
@@ -278,7 +276,7 @@ form input.submitBtn {
   background-color: #ffa500;
   color: white;
   border-radius: 1rem;
-  padding: .75 rem 1.5rem;
+  padding: .75rem 1.5rem;
   margin: 0 0 2rem 2%;
   max-width: 20rem;
 }
