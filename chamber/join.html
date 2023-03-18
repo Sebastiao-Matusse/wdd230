@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Adventures Travelling Chamaber of Commerce in Sofala&Manica Mozambique"
+    />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/small.css" />
+    <link rel="stylesheet" href="../styles/medium.css" />
+    <link rel="stylesheet" href="../styles/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <title>Join</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="banner"></div>
+      <header>
+        <div class="logo">
+          <a href="/chamber/index.html"
+            ><img src="../images/logo.webp" width="100" alt="logo-image"
+          /></a>
+          <h2>The Adventures Travelling Chamaber of Commerce</h2>
+        </div>
+        <nav>
+          <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../discover/discover.html">Discover</a></li>
+            <li><a href="join.html">Join </a></li>
+            <li><a href="#">Site-plan</a></li>
+          </ul>
+        </nav>
+        <div id="socials">
+          <ul>
+            <li class="push">
+              <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+                ><img src="../images/fb.png" alt="facebook-icon"
+              /></a>
+            </li>
+            <li class="push">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="../images/in.png" alt="linkedin-icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Aplicant Information</legend>
+            <label class="top">
+              First Name* <input type="text" name="fname" required />
+            </label>
+            <label class="top">
+              Last Name* <input type="text" name="lname" required />
+            </label>
+            <label class="top">
+              Business Position Title
+              <input type="text" name="position" pattern="[A-Za-z -]{7,}" />
+            </label>
+            <label class="top">
+              Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+            <label class="top">
+              Phone* <input type="tel" name="phone" required />
+            </label>
+            <label class="top">
+              Business Name* <input type="text" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Membership</legend>
+            <div>Select my Membership Level</div>
+            <label class="sbs">
+              <input type="radio" name="membership" />1. NP Membership is for
+              non profit organizations and there is no fee
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 2. Bronze Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 3. Silver Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" /> 4. Gold Membership
+            </label>
+            <table>
+              <thead>
+                <tr>
+                  <th>Cost</th>
+                  <th>Advertising</th>
+                  <th>Discounts</th>
+                  <th>Trainings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$25</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$50</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$75</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>$100</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+
+          <fieldset>
+            <legend>Business Description</legend>
+            <label>
+              Describe My Business
+              <textarea name="description" cols="50" rows="5"></textarea>
+            </label>
+            <input type="hidden" name="hiddenDate" value="Todays Date" />
+          </fieldset>
+
+          <label
+            ><input
+              type="submit"
+              name="submitBtn"
+              class="submitBtn"
+              value="Join The Chamber"
+          /></label>
+          <label
+            ><input type="hidden" name="currentDate" class="currentDate"
+          /></label>
+        </form>
+      </main>
+    </div>
+
+    <footer>
+      <div class="logo">
+        <div class="footer-logo">
+          <img src="../images/logo.webp" width="100" alt="logo-image" />
+
+          <p>
+            The Adventures Travelling Chamber of Commerce <br />
+            Rua General Vieira da Rocha - Munhava <br />
+            Beira
+            <br />
+            Moçambique
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>info@AdTravellingcc.org</p>
+        <p>(+258) 235 235</p>
+        <p class="map-location">
+          <a
+            href="https://www.google.com/maps/place/TMcel/@-19.8353512,34.8389569,44m/data=!3m1!1e3!4m5!3m4!1s0x1f2a6af2e74e9d7d:0xccb44ef32a891318!8m2!3d-19.8352765!4d34.8389177!5m1!1e4"
+            target="_blank"
+            >&#x1F4CD; Location Map
+          </a>
+        </p>
+      </div>
+      <div class="copyright">
+        &copy;2023 Adventures Travelling Chamber
+        <p>Sebastião J. Matusse</p>
+        <p>WDD 230 project</p>
+        <p>Last Last Updated: <span class="currentDate"></span></p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
