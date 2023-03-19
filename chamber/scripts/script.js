@@ -83,7 +83,7 @@ const daysAfter = document.createElement("span");
 divHeader.setAttribute("class", "date");
 daysAfter.setAttribute("id", "daysAfter");
 divHeader.appendChild(daysAfter);
-header.appendChild(divHeader);
+// header.appendChild(divHeader);
 
 // get the stored value in localStorage
 let lastDayVisit = Number(window.localStorage.getItem("visits-ls"));
@@ -91,12 +91,12 @@ let lastDayVisit = Number(window.localStorage.getItem("visits-ls"));
 // Days after last visit
 // Determine if this is the first visit or display the number of visits.
 let today = Date.now();
-if (lastDayVisit !== 0) {
-  const numDays = Math.round(today / 86400000 - lastDayVisit);
-  daysAfter.textContent = `${numDays} days after your last visit`;
-} else {
-  daysAfter.textContent = "This is your first visit ";
-}
+// if (lastDayVisit !== 0) {
+//   const numDays = Math.round(today / 86400000 - lastDayVisit);
+//   daysAfter.textContent = `${numDays} days after your last visit`;
+// } else {
+//   daysAfter.textContent = "This is your first visit ";
+// }
 
 // sets the day visiting the page as the last visiting day.
 lastDayVisit = today / 86400000;
