@@ -29,6 +29,12 @@
     grid-column-end: 4;
   }
 
+  .date {
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+
+
   #socials {
     grid-column-start: 4;
     grid-column-end: 5;

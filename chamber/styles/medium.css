@@ -27,12 +27,29 @@
     width: 100%;
   }
 
-picture:hover img {
-  -ms-transform: scale(.99); /* IE 9 */
-  -webkit-transform: scale(.99); /* Safari 3-8 */
-  transform: scale(.99); 
-  transition: 1s;
-}
+  picture:hover img {
+    -ms-transform: scale(.99); /* IE 9 */
+    -webkit-transform: scale(.99); /* Safari 3-8 */
+    transform: scale(.99); 
+    transition: 1s;
+  }
+
+  header div:nth-child(1){
+    display: flex;
+    justify-items: center;
+  }
+  
+  header div a{
+    float: left;
+  }
+
+  .date {
+    grid-column-start: -2;
+    grid-column-end: -1;
+    border-radius: 10px;
+    background-color: #ffc328;
+  }
+  
 
   #socials {
     grid-column: 3/4;

@@ -35,9 +35,13 @@ header {
 }
 
 header div {
-  width: 100%;
+  padding: 10px;
+  /* width: 100%; */
   text-align: center;
+  padding: 5px;
 }
+
+
 header nav {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -59,13 +63,13 @@ div ul {
 }
 
 .date {
-  display: flex;
+  /* display: flex; */
   grid-column-start: 1;
   grid-column-end: -1;
+  border-radius: 10px;
   background-color: #ffc328;
   justify-content: center;
-  width: 100%;
-  border: 15px solid #e0ffff;
+  /* border: 1px solid #e0ffff; */
 }
 
 main {
