@@ -8,7 +8,7 @@
       name="description"
       content="The Adventures Travelling Chamaber of Commerce in Sofala&Manica Mozambique"
     />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
@@ -28,9 +28,9 @@
       <header>
         <div class="logo">
           <a href="index.html"
-            ><img src="images/logo.webp" width="100" alt="logo-image"
+            ><img src="images/logo.webp" alt="logo-image"
           /></a>
-          <h2>The Adventures Travelling Chamaber of Commerce</h2>
+          <h2>Beira Travelling Chamber of Commerce</h2>
         </div>
         <nav>
           <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
@@ -62,17 +62,38 @@
         <main class="page-body">
           <div id="hero-image" class="maindivs">
             <picture>
-              <source media="(max-width: 450px)" srcset="images/small.webp" />
-              <source media="(max-width: 650px)" srcset="images/medium.webp" />
-              <source media="(max-width: 850px)" srcset="images/large.webp" />
+              <source
+                media="(max-width: 450px)"
+                srcset="images/hero-small-450.webp"
+              />
+              <source
+                media="(max-width: 650px)"
+                srcset="images/hero-medium-800.webp"
+              />
+              <source
+                media="(max-width: 849px)"
+                srcset="images/hero-large-1200.webp"
+              />
+              <source
+                media="(min-width: 850px)"
+                srcset="images/hero-extralarge-1500.webp"
+              />
               <img
-                src="images/wdd230-org.jpg"
-                alt="business people in a meeting"
+                src="images/hero-extralarge-1500.webp"
+                alt="Beira city seaside buildings"
               />
             </picture>
-            Hero with site name and call to action
+            <p class="join">Join Chamber</p>
           </div>
-          <div class="maindivs">Event</div>
+          <div class="maindivs">
+            <h3>Upcoming Events</h3>
+            <p>
+              From Communities Around the Center region: Opportunities to
+              Improve your network
+            </p>
+            <p><span class="currentDate"></span></p>
+            <p>10:00 AM - 12:00 PM</p>
+          </div>
           <div class="maindivs" id="weather">
             <h3>Weather</h3>
             <figure>
@@ -109,10 +130,11 @@
     </div>
 
     <footer>
-      <div class="logo">
+      <div>
         <div class="footer-logo">
-          <img src="images/logo.webp" width="100" alt="logo-image" />
-
+          <a href="index.html">
+            <img src="images/logo.webp" alt="logo-image" />
+          </a>
           <p>
             The Adventures Travelling Chamber of Commerce <br />
             Rua General Vieira da Rocha - Munhava <br />
