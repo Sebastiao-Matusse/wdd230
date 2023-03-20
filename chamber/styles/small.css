@@ -35,27 +35,34 @@ header {
 }
 
 header div {
-  padding: 10px;
+  /* padding: 10px; */
   /* width: 100%; */
   text-align: center;
-  padding: 5px;
+  padding: 2px;
 }
 
+.logo {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 12px;
+}
 
 header nav {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  width: 70%;
 }
 
 #socials {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
 }
 div ul {
   display: flex;
+  padding: 0px;
   list-style-type: none;
   width: 100%;
   justify-content: start;
@@ -63,13 +70,11 @@ div ul {
 }
 
 .date {
-  /* display: flex; */
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column-start: 2;
+  grid-column-end: 3;
   border-radius: 10px;
   background-color: #ffc328;
   justify-content: center;
-  /* border: 1px solid #e0ffff; */
 }
 
 main {
