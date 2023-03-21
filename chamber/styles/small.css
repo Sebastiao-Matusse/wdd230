@@ -197,14 +197,53 @@ footer div h3,
   border: 2px solid white;
   background-color: #e0ffff;
 }
+
+#hero-image {
+  position: relative;
+}
+
+#hero-image .join {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.join {
+  background-color: #ffc328;
+  font-weight: 700;
+  color: #000000;
+}
+
+.join:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 .spotlights {
   padding: 0;
   height: 50%;
 }
 
 .spotlights section {
-  height: 200px;
+  min-height: 200px;
   border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.spotlight-2 figure {
+  margin: 5px;
+}
+
+.spotlight-2 figure img{
+  width: 100%;
+  margin: 0;
+
 }
 
 .spotlights section:nth-child(3) {
@@ -219,6 +258,7 @@ h1,
 h2,
 h3 {
   font-family: "EB Garamond", serif;
+  text-align: center;
 }
 
 
