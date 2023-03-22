@@ -1,6 +1,7 @@
 @media only screen and (min-width: 64rem) {
   header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
   }
 
   nav button {
@@ -13,7 +14,7 @@
 
   nav ul#primaryNav {
     display: flex;
-    margin-left: 2vw;
+    background-color: antiquewhite;
   }
 
   nav {
@@ -24,9 +25,15 @@
     justify-content: space-between;
   }
 
+  .logo {
+    grid-column: 1/2;
+    font-size: 1rem;
+  }
+
   header nav {
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row-start: 1;
   }
 
   .date {
@@ -37,7 +44,7 @@
 
   #socials {
     grid-column-start: 4;
-    grid-column-end: 5;
+    grid-row-start: 1;
   }
 
   /* main div {

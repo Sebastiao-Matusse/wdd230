@@ -186,9 +186,10 @@ footer div h3,
   flex-direction: column;
 }
 
-#weather p{
+#weather {
   text-align: center;
 }
+
 
 .maindivs {
   padding: 5px;
@@ -198,11 +199,11 @@ footer div h3,
   background-color: #e0ffff;
 }
 
-#hero-image {
+.maindivs {
   position: relative;
 }
 
-#hero-image .join {
+.join {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -210,9 +211,6 @@ footer div h3,
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
-}
-
-.join {
   background-color: #ffc328;
   font-weight: 700;
   color: #000000;
@@ -234,6 +232,8 @@ footer div h3,
   min-height: 200px;
   border: 1px solid gray;
   border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .spotlight-2 figure {
