@@ -61,6 +61,16 @@
     grid-column: 2/4;
   }
 
+  #hero-image .join{
+    bottom: 170px;
+  
+  }
+
+  .news .join, .joindiv .join {
+    padding: 10px;
+  }
+  
+
   .spotlights {
     padding: 0;
     height: 100%;
@@ -121,7 +131,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
   
 
   .footer-logo {

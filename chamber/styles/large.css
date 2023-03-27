@@ -51,6 +51,10 @@
     height: 100%;
   } */
 
+  #hero-image .join{
+    bottom: 50px;
+  }
+
   .page-body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -99,7 +103,7 @@
     display: block;
     position: absolute;
     left: 65vw;
-    top: 840px;
+    bottom: 1rem;
   }
 
   thead{

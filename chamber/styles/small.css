@@ -25,6 +25,11 @@ body {
   width: 100%;
 }
 
+.discover{
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 /* <-------STYLING THE HEADER------->*/
 header {
   display: grid;
@@ -203,12 +208,20 @@ footer div h3,
   position: relative;
 }
 
+#hero-image .join{
+  bottom: 230px;
+  padding: 10px;
+
+}
+
+.news .join, .joindiv .join {
+  bottom: 20px;
+}
+
 .join {
   position: absolute;
-  bottom: 20px;
   right: 20px;
   border: 1px solid;
-  padding: 10px;
   border-radius: 10px;
   text-decoration: none;
   background-color: #ffc328;
@@ -236,11 +249,11 @@ footer div h3,
   padding: 5px;
 }
 
-.spotlight-2 figure {
+.spotlight-1 figure, .spotlight-2 figure, .spotlight-3 figure{
   margin: 5px;
 }
 
-.spotlight-2 figure img{
+.spotlight-1 figure img, .spotlight-2 figure img, .spotlight-3 figure img{
   width: 100%;
   margin: 0;
 
@@ -282,6 +295,7 @@ picture img {
 /* --------- FORM ------------ */
 
 form fieldset{
+  position: relative;
   margin: 2rem;
   border: 1px solid #ffa500;
   border-radius: 10px;
@@ -314,6 +328,7 @@ form label.sbs, label textarea {
   display: block;
   padding: .75rem;
   color: #555;
+  border-radius: 10px;
 }
 
 form label.sbs input{
@@ -327,7 +342,7 @@ form input.submitBtn {
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: 0 0 2rem 2%;
-  max-width: 20rem;
+  max-width: 30rem;
 }
 
 /* --------THANK YOU PAGE-------- */
@@ -422,4 +437,20 @@ input:required:valid{
 
 table{
   display: none;
+}
+
+/*------- CONTACT PAGE -------*/
+.contact-div-1{
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-div-2{
+  color: black;
+  font-size: 1rem;
+  text-align: center;
 }
