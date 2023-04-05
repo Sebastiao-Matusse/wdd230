@@ -1,7 +1,28 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
+  .logo {
+    grid-column: 1/2;
+  }
+
+  nav {
+    grid-column: 2/3;
+  }
+
+  #primaryNav {
+    justify-content: space-evenly;
+  }
+
+  #socials {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
   #primaryNav,
   #socials ul {
     display: flex;
+  }
+
+  nav button {
+    display: none;
   }
 
   .hero {
@@ -16,6 +37,12 @@
 
   .hero div {
     grid-column: 2/4;
+    top: 40%;
+    font-size: 2rem;
+  }
+
+  .coastal-beach-description {
+    font-size: 1.5rem;
   }
 
   .area-description div:nth-child(1) {

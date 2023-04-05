@@ -1,2 +1,39 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 37.5rem) {
+  #socials {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  #primaryNav,
+  #socials ul {
+    border: none;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+
+  .hero picture {
+    grid-column: 1/5;
+  }
+
+  .hero div {
+    grid-column: 2/4;
+    top: 30%;
+    font-size: 1.3rem;
+  }
+
+  .coastal-beach-description {
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.5);
+    font-size: 0.99rem;
+    color: white;
+    max-width: 75%;
+    top: 50px;
+    left: 0px;
+    min-height: fit-content;
+    padding: 0 0 0 15px;
+  }
 }
