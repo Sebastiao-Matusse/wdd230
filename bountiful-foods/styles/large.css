@@ -72,4 +72,10 @@
     grid-gap: 30px;
     margin: 0 auto;
   }
+
+  /* ------ABOUT US PAGE ------
+  .main-aboutus {
+    margin: 0 auto;
+    max-width: 980px;
+  } */
 }

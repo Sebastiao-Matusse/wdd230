@@ -36,4 +36,10 @@
     min-height: fit-content;
     padding: 0 0 0 15px;
   }
+
+  /* ------ABOUT US PAGE ------ */
+  .main-aboutus {
+    margin: 0 auto;
+    max-width: 980px;
+  }
 }

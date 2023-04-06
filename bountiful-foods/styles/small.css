@@ -12,6 +12,13 @@ body {
   padding: 0 5px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
 header {
   background-color: #fffb00;
   font-size: 2rem;
@@ -91,12 +98,13 @@ nav ul.open {
 
 #primaryNav li a,
 #socials ul li a,
-.footer-socials li a {
+.footer-socials li a,
+button a {
   text-decoration: none;
   color: black;
 }
 
-main {
+.content {
   /* max-width: 1100px; */
   margin: 0 auto;
 }
@@ -208,6 +216,11 @@ footer div h3 {
 }
 
 /* -----FRESH PAGE ----- */
+
+.forms {
+  max-width: 920px;
+}
+
 fieldset,
 label,
 select,
@@ -216,13 +229,23 @@ textarea {
   padding: 0.35em 0.75em 0.625em;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 15px;
+}
+
+fieldset {
+  box-shadow: 1px 1px gray;
+  margin: 10px;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 input,
 select,
 textarea {
-  max-width: 400px;
+  max-width: 480px;
 }
 
 #modal,
@@ -230,7 +253,7 @@ textarea {
   display: none;
   position: fixed;
   z-index: 5;
-  padding-top: 50px;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -249,9 +272,24 @@ textarea {
   width: 80%;
 }
 
+.close,
+.close-submission {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .close:hover,
-.close:focus {
+.close:focus,
+.close-submission:hover,
+.close-submission:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* ------- ABOUT US PAGE ------ */
+iframe {
+  width: 100%;
 }
