@@ -6,12 +6,12 @@ const dayFourTemp = document.querySelector(".temperature-four");
 const weatherIcon = document.querySelector("#weather-icon");
 const dayTwoWeatherIcon = document.querySelector("#day-two-weather-icon");
 const dayThreeWeatherIcon = document.querySelector("#day-three-weather-icon");
-const dayFourWeatherIcon = document.querySelector("#day-three-weather-icon");
+const dayFourWeatherIcon = document.querySelector("#day-four-weather-icon");
 
-const captionDesc = document.querySelector("figcaption");
-const captionDescTwo = document.querySelector("figcaption");
-const captionDescThree = document.querySelector("figcaption");
-const captionDescFour = document.querySelector("figcaption");
+const captionDesc = document.querySelector(".figcaption-one");
+const captionDescTwo = document.querySelector(".figcaption-two");
+const captionDescThree = document.querySelector(".figcaption-three");
+const captionDescFour = document.querySelector(".figcaption-four");
 
 const humidity = document.querySelector("#humidity");
 const humidityTwo = document.querySelector(".humidity-two");
@@ -31,7 +31,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       displayResults(data, 0, 5, 13, 21);
       // displayResults(data, 1);
     } else {
@@ -79,37 +79,38 @@ function displayResults(
 
   dayTwoWeatherIcon.setAttribute("src", iconsrcTwo);
   dayTwoWeatherIcon.setAttribute("alt", descTwo);
-  captionDesc.textContent = descTwo.toUpperCase();
+  captionDescTwo.textContent = descTwo.toUpperCase();
 
   // DAY THREE
   dayThreeTemp.innerHTML = `<strong>${weatherData.list[
     index_three
   ].main.temp.toFixed(0)}</strong>`;
-  // humidityThree.innerHTML = `<strong>${weatherData.list[
-  //   index_three
-  // ].main.humidity.toFixed(0)}</strong>`;
+  humidityThree.innerHTML = `<strong>${weatherData.list[
+    index_three
+  ].main.humidity.toFixed(0)}</strong>`;
 
   const iconsrcThree = `https://openweathermap.org/img/w/${weatherData.list[index_three].weather[0].icon}.png`;
   const descThree = weatherData.list[index_three].weather[0].description;
 
   dayThreeWeatherIcon.setAttribute("src", iconsrcThree);
   dayThreeWeatherIcon.setAttribute("alt", descThree);
-  captionDesc.textContent = descTwo.toUpperCase();
+  captionDescThree.textContent = descTwo.toUpperCase();
+  // console.log(captionDescThree);
 
   // DAY FOUR
   dayFourTemp.innerHTML = `<strong>${weatherData.list[
     index_four
   ].main.temp.toFixed(0)}</strong>`;
-  // humidityThree.innerHTML = `<strong>${weatherData.list[
-  //   index_four
-  // ].main.humidity.toFixed(0)}</strong>`;
+  humidityFour.innerHTML = `<strong>${weatherData.list[
+    index_four
+  ].main.humidity.toFixed(0)}</strong>`;
 
   const iconsrcFour = `https://openweathermap.org/img/w/${weatherData.list[index_four].weather[0].icon}.png`;
   const descFour = weatherData.list[index_four].weather[0].description;
 
   dayFourWeatherIcon.setAttribute("src", iconsrcFour);
   dayFourWeatherIcon.setAttribute("alt", descFour);
-  captionDesc.textContent = descTwo.toUpperCase();
+  captionDescFour.textContent = descFour.toUpperCase();
 
   let dayOf = weatherData.list[index_three].dt_txt;
   // console.log(typeof dayOf);
@@ -142,7 +143,7 @@ function displayResults(
   }
   displayDayThree.innerHTML = weekday;
 
-  console.log(`First display: ${weekday}`);
+  // console.log(`First display: ${weekday}`);
 
   if (dayFour == 0) {
     weekday = "Sunday";
@@ -162,5 +163,5 @@ function displayResults(
     weekday = "Day 4";
   }
   displayDayFour.innerHTML = weekday;
-  console.log(`Second display: ${weekday}`);
+  // console.log(`Second display: ${weekday}`);
 }
