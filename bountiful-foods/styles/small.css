@@ -12,9 +12,19 @@ h3 {
   font-family: "Lobster Two";
 }
 
-.modal-content p,
-.modal-content span {
+#modal-content p,
+#modal-content span {
   font-family: Manrope;
+}
+
+#modal-content span {
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fffb00;
+  color: black;
+  padding: 10px;
+  display: flex;
+  max-width: max-content;
 }
 
 /* picture img {
@@ -318,6 +328,10 @@ textarea {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+#thankcontent {
+  text-align: center;
 }
 
 #content,
