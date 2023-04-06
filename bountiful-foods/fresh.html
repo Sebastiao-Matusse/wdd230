@@ -8,156 +8,35 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
-    <title>Home</title>
+    <meta
+      name="description"
+      content="Carlsbad Fresh Food is  the best place to find the best fruits that you will ever want
+  to. You coose the fruits and we mix them to you. Fresh and
+  natural"
+    />
+
+    <title>Fresh</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="index.html"
-          ><img src="https://placeholder.com/50" alt="logo-image"
-        /></a>
-        <h2>Bountiful Foods</h2>
-      </div>
-      <nav>
-        <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
-        <ul id="primaryNav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="fresh.html">Fresh</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="resource.html">Resource</a></li>
-        </ul>
-      </nav>
-      <div id="socials">
-        <ul>
-          <li class="push">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
-              ><img src="./images/fb.png" alt="facebook-icon"
-            /></a>
-          </li>
-          <li class="push">
-            <a href="https://www.linkedin.com/" target="_blank"
-              ><img src="./images/twiter.png" alt="twiter-icon"
-            /></a>
-          </li>
-          <li class="push">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
-              ><img src="./images/in.png" alt="linkedin-icon"
-            /></a>
-          </li>
-          <li class="push">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
-              ><img src="./images/ing.png" alt="instagram-icon"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <main>
-      <form method="get" action="fresh.html">
-        <fieldset>
-          <legend>Customer Information</legend>
-          <label>
-            First Name* <input type="text" name="name" required id="name" />
-          </label>
-          <label>
-            Email*
-            <input
-              type="email"
-              name="email"
-              placeholder="example@gmail.com"
-              required
-              id="email"
-            />
-          </label>
-          <label>
-            Phone* <input type="tel" name="phone" required id="phone" />
-          </label>
-        </fieldset>
-
-        <fieldset class="fruit-selection">
-          <legend>Fruit Selection</legend>
-          <select name="first-fruit" id="first-fruit" required="required">
-            <option value="" hidden>Select Fruit</option>
-          </select>
-          <select name="second-fruit" id="second-fruit" required>
-            <option value="" hidden>Select Fruit</option>
-          </select>
-          <select name="third-fruit" id="third-fruit" required>
-            <option value="" hidden>Select Fruit</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Special Instructions</legend>
-          <label>
-            <textarea
-              name="description"
-              cols="20"
-              rows="2"
-              placeholder="Anything in specific you want to tell us?"
-              id="special-info"
-            ></textarea>
-          </label>
-        </fieldset>
-
-        <label
-          ><input
-            type="submit"
-            name="submitBtn"
-            class="confirmBtn"
-            value="Make Order"
-        /></label>
-      </form>
-      <form action="post" id="modal">
-        <div id="content">
-          <span class="close">&times;</span>
-          <div id="modal-content">
-            <label for="">confirm Your Selection</label>
-            <fieldset>
-              <label>Customer Input</label>
-              <div>
-                <p>Fist Name: <span id="selected-name"></span></p>
-                <p>Email: <span id="selected-email"></span></p>
-                <p>Phone: <span id="selectd-phone"></span></p>
-                <p>Fist Fruit: <span id="selected-fruit-one"></span></p>
-                <p>Second Fruit: <span id="selected-fruit-two"></span></p>
-                <p>Third Fruit: <span id="selectd-fruit-three"></span></p>
-                <p>Special Instructions: <span id="selected-info"></span></p>
-              </div>
-            </fieldset>
-            <fieldset>
-              <label>Nutritions</label>
-              <p>carbohydrates: <span id="carbohydrates"></span></p>
-              <p>protein: <span id="protein"></span></p>
-              <p>fat: <span id="fat"></span></p>
-              <p>sugar: <span id="sugar"></span></p>
-              <p>calories: <span id="calories"></span></p>
-            </fieldset>
-
-            <label>
-              <input type="button" class="submitBtn" value="Finish Order" />
-            </label>
-          </div>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="logo-image"
+          /></a>
+          <h2>Bountiful Foods</h2>
         </div>
-      </form>
-      <div class="mainthankyou">
-        <div id="thankcontent">
-          <img
-            class="submitsuccessimg"
-            src="/chamber/images/submitSuccess.webp"
-            alt="Success Image"
-          />
-          <h2 class="thankyou">Thank You!</h2>
-          <p class="thankyou">Your application has been sent.</p>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <h3>Follow us</h3>
-        <div>
-          <ul class="footer-socials">
+        <nav>
+          <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resource.html">Resource</a></li>
+          </ul>
+        </nav>
+        <div id="socials">
+          <ul>
             <li class="push">
               <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
                 ><img src="./images/fb.png" alt="facebook-icon"
@@ -180,15 +59,150 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="copyright">
-        <p>
-          ©2023 | Sebastião J. Matusse | Beira | Last Updated:
-          <span class="lastModified"></span>
-        </p>
-      </div>
-    </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/fruits.js"></script>
+      </header>
+
+      <main>
+        <div class="forms">
+          <form method="get" action="fresh.html">
+            <fieldset>
+              <legend>Customer Information</legend>
+              <label>
+                First Name* <input type="text" name="name" required id="name" />
+              </label>
+              <label>
+                Email*
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required
+                  id="email"
+                />
+              </label>
+              <label>
+                Phone* <input type="tel" name="phone" required id="phone" />
+              </label>
+            </fieldset>
+
+            <fieldset class="fruit-selection">
+              <legend>Fruit Selection</legend>
+              <select name="first-fruit" id="first-fruit" required="required">
+                <option value="" hidden>Select Fruit</option>
+              </select>
+              <select name="second-fruit" id="second-fruit" required>
+                <option value="" hidden>Select Fruit</option>
+              </select>
+              <select name="third-fruit" id="third-fruit" required>
+                <option value="" hidden>Select Fruit</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Special Instructions</legend>
+              <label>
+                <textarea
+                  name="description"
+                  cols="20"
+                  rows="2"
+                  placeholder="Anything in specific you want to tell us?"
+                  id="special-info"
+                ></textarea>
+              </label>
+            </fieldset>
+
+            <label
+              ><input
+                type="submit"
+                name="submitBtn"
+                class="confirmBtn"
+                value="Make Order"
+            /></label>
+          </form>
+          <form action="post" id="modal">
+            <div id="content">
+              <span class="close">&times;</span>
+              <div id="modal-content">
+                <label>confirm Your Selection</label>
+                <fieldset>
+                  <label>Customer Input</label>
+                  <div>
+                    <p>Fist Name: <span id="selected-name"></span></p>
+                    <p>Email: <span id="selected-email"></span></p>
+                    <p>Phone: <span id="selectd-phone"></span></p>
+                    <p>Fist Fruit: <span id="selected-fruit-one"></span></p>
+                    <p>Second Fruit: <span id="selected-fruit-two"></span></p>
+                    <p>Third Fruit: <span id="selectd-fruit-three"></span></p>
+                    <p>
+                      Special Instructions: <span id="selected-info"></span>
+                    </p>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <label>Nutritions</label>
+                  <p>carbohydrates: <span id="carbohydrates"></span></p>
+                  <p>protein: <span id="protein"></span></p>
+                  <p>fat: <span id="fat"></span></p>
+                  <p>sugar: <span id="sugar"></span></p>
+                  <p>calories: <span id="calories"></span></p>
+                </fieldset>
+
+                <label>
+                  <input type="button" class="submitBtn" value="Finish Order" />
+                </label>
+              </div>
+            </div>
+          </form>
+          <div class="mainthankyou">
+            <div id="thankcontent">
+              <span class="close-submission">&times;</span>
+              <img
+                class="submitsuccessimg"
+                src="images/submitSuccess.webp"
+                alt="Success Image"
+              />
+              <h2 class="thankyou">Thank You!</h2>
+              <p class="thankyou">Your application has been sent.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <h3>Follow us</h3>
+          <div>
+            <ul class="footer-socials">
+              <li class="push">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+                  ><img src="./images/fb.png" alt="facebook-icon"
+                /></a>
+              </li>
+              <li class="push">
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img src="./images/twiter.png" alt="twiter-icon"
+                /></a>
+              </li>
+              <li class="push">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+                  ><img src="./images/in.png" alt="linkedin-icon"
+                /></a>
+              </li>
+              <li class="push">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+                  ><img src="./images/ing.png" alt="instagram-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            ©2023 | Sebastião J. Matusse | Beira | Last Updated:
+            <span class="lastModified"></span>
+          </p>
+        </div>
+      </footer>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/fruits.js"></script>
+    </div>
   </body>
 </html>
