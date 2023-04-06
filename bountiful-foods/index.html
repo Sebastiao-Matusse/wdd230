@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Home</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
     <meta
       name="description"
-      content="Carlsbad Fresh Food is  the best place to find the best fruits that you will ever want
-    to. You coose the fruits and we mix them to you. Fresh and
+      content="Carlsbad Fresh Food the best place to find Fresh Fruits to. You coose the fruits and we mix them to you. Fresh and
     natural"
     />
-    <title>Home</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="logo">
           <a href="index.html"
-            ><img src="images/logo.png" alt="logo-image"
+            ><img
+              src="https://placehold.co/48x85"
+              data-src="images/logo.png"
+              alt="logo-image"
           /></a>
           <h2>Fresh Food</h2>
         </div>
@@ -90,23 +95,10 @@
                 type="image/webp"
               />
               <img
-                src="images/hero-1920.webp"
+                src="https://placehold.co/800x400"
+                data-src="images/hero-1920.webp"
                 alt="three jucy cups with fruits around on the table"
               />
-              <span>
-                <caption>
-                  Photo by
-                  <a
-                    href="https://unsplash.com/@zladuric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    >Zlatko Đurić</a
-                  >
-                  on
-                  <a
-                    href="https://unsplash.com/s/photos/juice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    >Unsplash</a
-                  >
-                </caption>
-              </span>
             </picture>
             <div>
               <h1>Fresh Food</h1>
@@ -115,12 +107,12 @@
                 to. You coose the fruits and we mix them to you. Fresh and
                 natural
               </p>
-              <a href="fresh.html"><button>Make My Order</button></a>
+              <button><a href="fresh.html">Make My Order</a></button>
             </div>
           </section>
 
           <section class="area-description">
-            <h2>California</h2>
+            <h2>Carlsbad</h2>
             <div class="coastal-beach-description">
               <p>
                 Carlsbad is a coastal city in the North County region of San
@@ -154,7 +146,7 @@
           </section>
 
           <section class="weather">
-            <h2>Weather in San Diego</h2>
+            <h2>Weather in Carlsbad</h2>
             <div class="forecast">
               <div class="day">
                 <h3>Today</h3>
@@ -188,7 +180,7 @@
                   <figcaption></figcaption>
                 </figure>
                 <hr />
-                <p>Humidity: <span id="humidity-two"></span></p>
+                <p>Humidity: <span class="humidity-two"></span></p>
               </div>
               <div class="day">
                 <h3>After Tomorrow</h3>
@@ -222,23 +214,17 @@
                   <figcaption></figcaption>
                 </figure>
                 <hr />
-                <p>Humidity: <span id="humidity-three"></span></p>
+                <p>Humidity: <span class="humidity-three"></span></p>
               </div>
             </div>
           </section>
 
-          <!-- <section class="spotlights">
-            <div class="spotlight">
-              <picture>
-                <img src="https://placekitten.com/300/300" alt="" />
-              </picture>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                quisquam maiores recusandae? Pariatur perferendis blanditiis,
-                aliquam minima sint voluptatem laudantium!
-              </p>
+          <section class="drink-orders">
+            <h2>Number of orderd drinks</h2>
+            <div>
+              <p><span class="orders"></span></p>
             </div>
-            <div class="spotlight">
+            <!-- <div class="spotlight">
               <picture>
                 <img src="https://placebear.com/300/300" alt="" />
               </picture>
@@ -257,9 +243,9 @@
                 quisquam maiores recusandae? Pariatur perferendis blanditiis,
                 aliquam minima sint voluptatem laudantium!
               </p>
-            </div>
-          </section> -->
-          <a href="fresh.html"><button>Make My Order</button></a>
+            </div> -->
+          </section>
+          <button><a href="fresh.html">Make Order</a></button>
         </div>
       </main>
 
@@ -300,6 +286,7 @@
       </footer>
       <script src="scripts/script.js"></script>
       <script src="scripts/weather.js"></script>
+      <script src="scripts/orders.js"></script>
     </div>
   </body>
 </html>
