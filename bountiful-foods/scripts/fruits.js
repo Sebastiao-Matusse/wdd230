@@ -24,7 +24,8 @@ let selects = document.querySelectorAll("select");
 
 let modal = document.querySelector("#modal");
 let span = document.getElementsByClassName("close")[0];
-let thanks = document.querySelector("#mainthankyou");
+let thanks = document.querySelector(".mainthankyou");
+let closeSubmissionBtn = document.querySelector(".close-submission");
 
 let fruits;
 async function apiFetch() {
@@ -152,6 +153,10 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
+closeSubmissionBtn.onclick = function () {
+  thanks.style.display = "none";
+  modal.style.display = "none";
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -163,5 +168,5 @@ submitBtn.onclick = function () {
   let content = document.querySelector("#modal-content");
   // content.removeChild();
   content.remove();
-  thanks.style.display = block;
+  thanks.style.display = "block";
 };
