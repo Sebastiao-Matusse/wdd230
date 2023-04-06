@@ -346,6 +346,13 @@ textarea {
   cursor: pointer;
 }
 
+.confirmBtn {
+  max-width: 100px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
 /* ------- ABOUT US PAGE ------ */
 iframe {
   width: 100%;
