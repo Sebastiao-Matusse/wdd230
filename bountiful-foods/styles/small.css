@@ -346,7 +346,8 @@ textarea {
   cursor: pointer;
 }
 
-.confirmBtn {
+.confirmBtn,
+.submitBtn {
   max-width: 100px;
   background-color: green;
   color: white;
