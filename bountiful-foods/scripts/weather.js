@@ -32,7 +32,8 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      displayResults(data);
+      displayResults(data, 0, 1, 2, 3);
+      // displayResults(data, 1);
     } else {
       throw Error(await response.text());
     }
@@ -43,63 +44,64 @@ async function apiFetch() {
 
 apiFetch();
 
-function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(
+function displayResults(weatherData, index, index_one, indexTwo, indexThree) {
+  currentTemp.innerHTML = `<strong>${weatherData.list[index].main.temp.toFixed(
     0
   )}</strong>`;
-  humidity.innerHTML = `<strong>${weatherData.list[0].main.humidity.toFixed(
+  humidity.innerHTML = `<strong>${weatherData.list[index].main.humidity.toFixed(
     0
   )}</strong>`;
 
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
-  const desc = weatherData.list[0].weather[0].description;
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[index].weather[0].icon}.png`;
+  const desc = weatherData.list[index].weather[0].description;
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
   captionDesc.textContent = desc.toUpperCase();
 
-  // ------ DAY TWO TEMPERATURE ------
-  dayTwoTemp.innerHTML = `<strong>${weatherData.list[1].main.temp.toFixed(
-    0
-  )}</strong>`;
-  humidityTwo.innerHTML = `<strong>${weatherData.list[1].main.humidity.toFixed(
-    0
-  )}</strong>`;
+  // DAY TWO
 
-  const iconsrcTwo = `https://openweathermap.org/img/w/${weatherData.list[1].weather[0].icon}.png`;
-  const descTwo = weatherData.list[1].weather[0].description;
+  dayTwoTemp.innerHTML = `<strong>${weatherData.list[
+    index_one
+  ].main.temp.toFixed(0)}</strong>`;
+  humidityTwo.innerHTML = `<strong>${weatherData.list[
+    index_one
+  ].main.humidity.toFixed(0)}</strong>`;
+
+  const iconsrcTwo = `https://openweathermap.org/img/w/${weatherData.list[index_one].weather[0].icon}.png`;
+  const descTwo = weatherData.list[index_one].weather[0].description;
 
   dayTwoWeatherIcon.setAttribute("src", iconsrcTwo);
   dayTwoWeatherIcon.setAttribute("alt", descTwo);
-  captionDescTwo.textContent = desc.toUpperCase();
+  captionDesc.textContent = descTwo.toUpperCase();
 
-  // ------ DAY THREE TEMPERATURE ------
-  dayThreeTemp.innerHTML = `<strong>${weatherData.list[2].main.temp.toFixed(
-    0
-  )}</strong>`;
-  humidityThree.innerHTML = `<strong>${weatherData.list[2].main.humidity.toFixed(
-    0
-  )}</strong>`;
+  // DAY THREE
+  dayThreeTemp.innerHTML = `<strong>${weatherData.list[
+    indexTwo
+  ].main.temp.toFixed(0)}</strong>`;
+  // humidityThree.innerHTML = `<strong>${weatherData.list[
+  //   indexTwo
+  // ].main.humidity.toFixed(0)}</strong>`;
 
-  const iconsrcThree = `https://openweathermap.org/img/w/${weatherData.list[2].weather[0].icon}.png`;
-  const descThree = weatherData.list[2].weather[0].description;
+  const iconsrcThree = `https://openweathermap.org/img/w/${weatherData.list[indexTwo].weather[0].icon}.png`;
+  const descThree = weatherData.list[indexTwo].weather[0].description;
 
   dayThreeWeatherIcon.setAttribute("src", iconsrcThree);
   dayThreeWeatherIcon.setAttribute("alt", descThree);
-  captionDescThree.textContent = desc.toUpperCase();
+  captionDesc.textContent = descTwo.toUpperCase();
 
-  // ------ DAY FOUR TEMPERATURE ------
-  dayFourTemp.innerHTML = `<strong>${weatherData.list[2].main.temp.toFixed(
-    0
-  )}</strong>`;
-  humidityFour.innerHTML = `<strong>${weatherData.list[2].main.humidity.toFixed(
-    0
-  )}</strong>`;
+  // DAY FOUR
+  dayFourTemp.innerHTML = `<strong>${weatherData.list[
+    indexThree
+  ].main.temp.toFixed(0)}</strong>`;
+  // humidityThree.innerHTML = `<strong>${weatherData.list[
+  //   indexThree
+  // ].main.humidity.toFixed(0)}</strong>`;
 
-  const iconsrcFour = `https://openweathermap.org/img/w/${weatherData.list[2].weather[0].icon}.png`;
-  const descFour = weatherData.list[2].weather[0].description;
+  const iconsrcFour = `https://openweathermap.org/img/w/${weatherData.list[indexThree].weather[0].icon}.png`;
+  const descFour = weatherData.list[indexThree].weather[0].description;
 
   dayFourWeatherIcon.setAttribute("src", iconsrcFour);
   dayFourWeatherIcon.setAttribute("alt", descFour);
-  captionDescFour.textContent = desc.toUpperCase();
+  captionDesc.textContent = descTwo.toUpperCase();
 }
