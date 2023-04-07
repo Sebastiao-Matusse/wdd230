@@ -121,7 +121,6 @@ confirmBtn.addEventListener("click", () => {
     selectedFruitTwo.innerHTML = document.querySelector("#second-fruit").value;
     selectedFruitThree.innerHTML = document.querySelector("#third-fruit").value;
     specialInfo.innerHTML = document.querySelector("#special-info").value;
-    console.log(phone.value);
     getFruitIndex(fruits);
     modal.style.display = "block";
   });
