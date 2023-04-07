@@ -37,6 +37,10 @@
     padding: 0 0 0 15px;
   }
 
+  .day {
+    width: 100%;
+  }
+
   /* ----- Fresh Page ------ */
   fieldset {
     margin: 10px;
