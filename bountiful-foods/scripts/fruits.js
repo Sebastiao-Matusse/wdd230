@@ -10,7 +10,7 @@ let specialInstruct = document.querySelector("#special-info");
 
 let selectedName = document.querySelector("#selected-name");
 let selectedEmail = document.querySelector("#selected-email");
-let SelectedPhone = document.querySelector("#selected-phonet");
+let SelectedPhone = document.querySelector("#selected-phone");
 let selectedfruitOne = document.querySelector("#selected-fruit-one");
 let selectedFruitTwo = document.querySelector("#selected-fruit-two");
 let selectedFruitThree = document.querySelector("#selectd-fruit-three");
@@ -35,7 +35,7 @@ async function apiFetch() {
     const response = await fetch(fruitData);
     if (response.ok) {
       fruits = await response.json();
-      console.log(fruits);
+      // console.log(fruits);
       displayResults(fruits);
     } else {
       throw Error(await response.text());
@@ -115,11 +115,13 @@ confirmBtn.addEventListener("click", () => {
     event.preventDefault();
     selectedName.innerHTML = document.querySelector("#name").value;
     selectedEmail.innerHTML = document.querySelector("#email").value;
-    // SelectedPhone.innerHTML = document.querySelector("#phone").value;
+    SelectedPhone.innerHTML = document.querySelector("#phone").value;
+
     selectedfruitOne.innerHTML = document.querySelector("#first-fruit").value;
     selectedFruitTwo.innerHTML = document.querySelector("#second-fruit").value;
     selectedFruitThree.innerHTML = document.querySelector("#third-fruit").value;
     specialInfo.innerHTML = document.querySelector("#special-info").value;
+    console.log(phone.value);
     getFruitIndex(fruits);
     modal.style.display = "block";
   });
@@ -129,7 +131,6 @@ confirmBtn.addEventListener("click", () => {
   // document.querySelector('.output').textContent = output;
   // console.log(firstName.value);
   // selectedEmail.innerHTML = email;
-  // // SelectedPhone.innerHTML = phone;
   // selectedfruitOne.innerHTML = firstFruit;
   // selectedFruitTwo.innerHTML = secondFruit;
   // selectedFruitThree.innerHTML = thirdFruit;
