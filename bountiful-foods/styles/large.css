@@ -66,6 +66,11 @@
     color: white;
   }
 
+  /* ------ FRESH PAGE ------ */
+  .fresh-h1 {
+    text-align: left;
+  }
+
   .spotlights {
     width: min-content;
     display: grid;

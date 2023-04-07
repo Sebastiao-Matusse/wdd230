@@ -283,6 +283,11 @@ footer div h3 {
 
 /* -----FRESH PAGE ----- */
 
+.fresh-h1 {
+  text-align: center;
+  color: orange;
+}
+
 .forms {
   max-width: 920px;
 }
@@ -300,7 +305,6 @@ textarea {
 
 fieldset {
   box-shadow: 1px 1px gray;
-  margin: 10px;
 }
 
 select {

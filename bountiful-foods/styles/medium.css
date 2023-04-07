@@ -37,6 +37,11 @@
     padding: 0 0 0 15px;
   }
 
+  /* ----- Fresh Page ------ */
+  fieldset {
+    margin: 10px;
+  }
+
   /* ------ABOUT US PAGE ------ */
   .main-aboutus {
     margin: 0 auto;
