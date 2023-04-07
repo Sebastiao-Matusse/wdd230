@@ -369,6 +369,11 @@ textarea {
 }
 
 /* ------- ABOUT US PAGE ------ */
-iframe {
+.map-img {
+  display: block;
+  margin-top: 5px;
+}
+
+.about {
   width: 100%;
 }
