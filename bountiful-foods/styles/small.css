@@ -125,6 +125,11 @@ nav ul.open {
   padding: 0;
 }
 
+#primaryNav li:hover,
+#socials ul li:hover {
+  border-bottom: 3px solid green;
+}
+
 #primaryNav li a,
 #socials ul li a,
 .footer-socials li a,
