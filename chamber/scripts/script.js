@@ -19,9 +19,14 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
   dateStyle: "full",
 }).format(now);
 
-const date = document.getElementsByClassName("currentDate");
-date[0].textContent = fulldateUK;
-date[1].textContent = new Date().toLocaleString("en-UK", firstOptions);
+const date = document.querySelectorAll(".currentDate");
+
+date.forEach((element) => {
+  element.textContent = new Date().toLocaleString("en-UK", firstOptions);
+});
+// date[0].textContent = fulldateUK;
+// date[1].textContent = new Date().toLocaleString("en-UK", firstOptions);
+// date[2].textContent = new Date().toLocaleString("en-UK", firstOptions);
 
 let day = new Date().getDay();
 
