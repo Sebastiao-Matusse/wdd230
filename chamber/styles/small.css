@@ -25,7 +25,7 @@ body {
   width: 100%;
 }
 
-.discover{
+.discover {
   margin: 0 auto;
   max-width: 960px;
 }
@@ -128,7 +128,7 @@ nav button {
   padding: 0;
 }
 
-nav ul li a{
+nav ul li a {
   width: 100%;
   display: block;
   padding: 0.8rem 2vw;
@@ -195,12 +195,11 @@ footer div h3,
   text-align: center;
 }
 
-
 .maindivs {
   padding: 5px;
   min-height: 200px;
   height: 100%;
-  border: 2px solid white;
+  border: 5px solid white;
   background-color: #e0ffff;
 }
 
@@ -208,13 +207,13 @@ footer div h3,
   position: relative;
 }
 
-#hero-image .join{
+#hero-image .join {
   bottom: 230px;
   padding: 10px;
-
 }
 
-.news .join, .joindiv .join {
+.news .join,
+.joindiv .join {
   bottom: 20px;
 }
 
@@ -231,9 +230,9 @@ footer div h3,
 
 .join:hover {
   -webkit-transform: scale(1.3);
-	transform: scale(1.1);
-  -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transform: scale(1.1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .spotlights {
@@ -249,14 +248,17 @@ footer div h3,
   padding: 5px;
 }
 
-.spotlight-1 figure, .spotlight-2 figure, .spotlight-3 figure{
+.spotlight-1 figure,
+.spotlight-2 figure,
+.spotlight-3 figure {
   margin: 5px;
 }
 
-.spotlight-1 figure img, .spotlight-2 figure img, .spotlight-3 figure img{
+.spotlight-1 figure img,
+.spotlight-2 figure img,
+.spotlight-3 figure img {
   width: 100%;
   margin: 0;
-
 }
 
 .spotlights section:nth-child(3) {
@@ -274,10 +276,9 @@ h3 {
   text-align: center;
 }
 
-
 /* Lazy-load image page */
 
-.lazy-load-img picture{
+.lazy-load-img picture {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,44 +295,47 @@ picture img {
 
 /* --------- FORM ------------ */
 
-form fieldset{
+form fieldset {
   position: relative;
   margin: 2rem;
   border: 1px solid #ffa500;
   border-radius: 10px;
-  padding: .5rem 2%;
+  padding: 0.5rem 2%;
 }
 
 form legend {
   color: #445ba9;
   margin: 0 1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
   display: block;
   padding-top: 1rem;
   color: #9c2c13;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select {
   display: block;
   font-size: 1rem;
-  padding: .75rem;
+  padding: 0.75rem;
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1) ;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs, label textarea {
+form label.sbs,
+label textarea {
   display: block;
-  padding: .75rem;
+  padding: 0.75rem;
   color: #555;
   border-radius: 10px;
 }
 
-form label.sbs input{
+form label.sbs input {
   margin: 0.2rem;
 }
 
@@ -340,7 +344,7 @@ form input.submitBtn {
   background-color: #ffa500;
   color: white;
   border-radius: 1rem;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   margin: 0 0 2rem 2%;
   max-width: 30rem;
 }
@@ -352,11 +356,12 @@ form input.submitBtn {
   justify-content: center;
 }
 
-.submitsuccessimg{
+.submitsuccessimg {
   margin: 10px;
 }
 
-.mainthankyou, .thankyou {
+.mainthankyou,
+.thankyou {
   text-align: center;
   margin: 2px;
 }
@@ -365,16 +370,15 @@ input:required:invalid {
   border: 1px solid #ffa500;
 }
 
-input:required:valid{
+input:required:valid {
   border: 1px solid green;
 }
 
 /* ------directory------ */
-.director-body{
+.director-body {
   font-size: 1rem;
   background-color: grey;
 }
-
 
 .grid {
   display: grid;
@@ -391,7 +395,9 @@ input:required:valid{
   align-items: center;
 }
 
-.cardhead h2, .cardhead p, .cardhead a {
+.cardhead h2,
+.cardhead p,
+.cardhead a {
   margin: 10px;
   text-align: center;
   display: block;
@@ -403,44 +409,44 @@ input:required:valid{
 }
 
 .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bbb;
-	text-align: center;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bbb;
+  text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+  padding: 1rem;
+  font-weight: 700;
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list section .cardhead {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
 }
 
 .list section > * {
-	margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+  display: none; /* smaller viewports only */
 }
 
-table{
+table {
   display: none;
 }
 
 /*------- CONTACT PAGE -------*/
-.contact-div-1{
+.contact-div-1 {
   align-items: center;
   display: flex;
   flex-flow: column;
@@ -449,7 +455,7 @@ table{
   font-size: 1rem;
 }
 
-.contact-div-2{
+.contact-div-2 {
   color: black;
   font-size: 1rem;
   text-align: center;

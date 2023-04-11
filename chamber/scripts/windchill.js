@@ -18,14 +18,15 @@ if (tC <= 50 && s > 3) {
 }
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?id=1052373&units=imperial&appid=6b2ac5c31cc8f9324e82017d0a20bc18";
-
+  "https://api.openweathermap.org/data/2.5/forecast?id=1052373&units=imperial&appid=6b2ac5c31cc8f9324e82017d0a20bc18";
+// const url =
+//   "api.openweathermap.org/data/2.5/forecast?id=5334223&units=imperial&appid=6b2ac5c31cc8f9324e82017d0a20bc18";
 async function apiFetch() {
   try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
+      // console.log(data); // this is for testing the call
       displayResults(data);
     } else {
       throw Error(await response.text());
@@ -38,14 +39,16 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
+  currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(
     0
   )}</strong>`;
 
-  windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
+  windSpeed.innerHTML = `<strong>${weatherData.list[0].wind.speed.toFixed(
+    0
+  )}</strong>`;
 
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = weatherData.weather[0].description;
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+  const desc = weatherData.list[0].weather[0].description;
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
